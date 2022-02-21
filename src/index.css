@@ -27,7 +27,7 @@ body {
   display: inline-block;
 }
 
-.header button{
+.header button.btn{
   padding: 20px 24px 20px 24px;
   border-radius: 0.5rem;
   border: 1px solid #162044;
@@ -37,6 +37,18 @@ body {
   font-weight: 600;
   font-family: 'Fira Sans', sans-serif;
   letter-spacing: 1px;
+}
+
+.header button.btn:hover{
+  cursor: pointer;
+}
+
+.header button.show{
+  display: none;
+}
+
+.bars{
+  display: none;
 }
 
 .header hr{
@@ -55,18 +67,95 @@ body {
     .header img{
       max-width: 19%;
     }
-    
+
+    .header img{
+      max-width: 25%;
+
+    }
+
+    .bars{
+      display: none;
+    }
+
+    /* .header button.show{
+      transform: translateX(20px);
+    } */
   }
-
-
 
   @media (max-width: 768px){
     .header .header-flex{
-      padding: 1rem 1rem 1rem 1rem;
-
+      padding: 1rem 2rem 1rem 2rem;
     }
     .header img{
       max-width: 30%;
+
+    }
+    .header .header-flex .btn{
+      display: none;
     }
 
+    .header.show{
+      display: none;
+    }
+
+    .bars{
+      display: contents;
+      margin: 1.2rem 3rem 1.2rem 3rem;
+      background-color: #162044;
+      color: #ffffff;
+    }
+    .bars button{
+      padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid #162044;
+      color: #ffffff;
+      background-color: #162044;
+      font-size: large;
+      /* transform: translateX(210px);
+      transition: transform 0.3s ease-in-out;
+      position: absolute; */
+    }
+
+    /* .header button.show{
+      transform: translateX(20px);
+    } */
+  }
+
+  @media (max-width: 320px){
+    .header .header-flex{
+      padding: 1rem 2rem 1rem 2rem;
+    }
+    .header img{
+      max-width: 60%;
+
+    }
+    .header .header-flex .btn{
+      display: none;
+    }
+
+    .header.show{
+      display: none;
+    }
+
+    .bars{
+      display: contents;
+      margin: 1.2rem 5rem 1.2rem 5rem;
+      background-color: #162044;
+      color: #ffffff;
+    }
+    .bars button{
+      padding: 0.5rem 1rem 0.4rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #162044;
+      color: #ffffff;
+      background-color: #162044;
+      font-size: medium;
+      /* transform: translateX(210px);
+      transition: transform 0.3s ease-in-out;
+      position: absolute; */
+    }
+
+    /* .header button.show{
+      transform: translateX(20px);
+    } */
   }

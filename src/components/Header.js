@@ -1,14 +1,15 @@
 import Logo from '../images/Logo.png'
+import {FaBars} from 'react-icons/fa'
 
 const Header = () => {
   return (
     <div className="header">
         <div className='header-flex'>
             <img src={Logo}/>
-            <button>Enter Builder</button>
-          
+            <button className='btn'>Enter Builder</button>
+            <button className='show'>Enter Builder</button>
+            <div className='bars'><button><FaBars /></button></div>
         </div>
-        <hr/>
         <hr/>
     </div>
   )
