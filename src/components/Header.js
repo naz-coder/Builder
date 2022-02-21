@@ -9,6 +9,7 @@ const Header = () => {
           
         </div>
         <hr/>
+        <hr/>
     </div>
   )
 }
