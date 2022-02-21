@@ -6,7 +6,7 @@ const Header = () => {
         <div className='header-flex'>
             <img src={Logo}/>
             <button>Enter Builder</button>
-            {/* <i className="fas fa-bars fa-2x"></i> */}
+          
         </div>
         <hr/>
     </div>
