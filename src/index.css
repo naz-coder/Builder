@@ -1,16 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Fira+Sans&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Fira+Sans&family=Josefin+Sans:wght@300&family=Zen+Kurenaido&display=swap');
 
 body {
   margin: 0;
   font-family: 'Archivo Narrow', sans-serif;
-  /* font-family: 'Fira Sans', sans-serif;
-  font-family: 'Zen Kurenaido', sans-serif; */
+  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #ffffff;
+  overflow: scroll;
+  
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 *{
   background-color: #070E27;
 }
 
+/* Header */
 .header .header-flex{
   padding: 1.2rem 2.5rem 1.2rem 2.5rem;
   display: flex;
@@ -58,12 +67,56 @@ body {
   font-size: 0;
   border: 0;}
 
+/* Body */
+.body-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 2rem 7rem 1rem 7rem;
+}
 
+.body-grid hr{
+  display: none;
+}
 
+.body-grid h1{
+  width: 40rem;
+  font-size: 4.2rem;
+  font-weight:900;
+}
+
+.body-grid .Defi-2{
+  width: 25rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.body-grid .Defi-2 button{
+  margin-top: 1rem;
+  padding: 20px 24px 20px 24px;
+  border-radius: 0.5rem;
+  border: 1px solid #0059f7;
+  color: #ffffff;
+  background-color: #0059f7;
+  font-size: 0.9rem;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.body-grid .Defi-2 button:hover{
+  cursor: pointer;
+}
+
+.header-img img{
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
 
 
 
   @media (max-width: 960px) {
+    /* Header */
     .header img{
       max-width: 19%;
     }
@@ -80,9 +133,41 @@ body {
     /* .header button.show{
       transform: translateX(20px);
     } */
+
+    /* Body */
+    .body-grid{
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 2rem;
+      padding: 2rem 4rem 1rem 4rem;
+    }
+
+    .body-grid h1{
+      width: 30rem;
+      font-size: 4rem;
+      font-weight:900;
+    }
+
+    .body-grid hr{
+      display: none;
+    }
+
+    .body-grid .Defi-2{
+      width: 18rem;
+      padding-top: 2.5rem;
+      font-size: 1.5rem;
+      font-weight:900;
+    }
+
+    .body-grid .Defi-2 button{
+      margin-top: 0.5rem;
+      font-weight: 900;
+    }
+
   }
 
+
   @media (max-width: 768px){
+        /* Header */
     .header .header-flex{
       padding: 1rem 2rem 1rem 2rem;
     }
@@ -119,9 +204,39 @@ body {
     /* .header button.show{
       transform: translateX(20px);
     } */
+
+        /* Body */
+    .body-grid{
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 2rem;
+      padding: 2rem 4rem 1rem 4rem;
+    }
+
+    .body-grid h1{
+      width: 20rem;
+      font-size: 3rem;
+      font-weight:900;
+    }
+
+    .body-grid hr{
+      display: none;
+    }
+
+    .body-grid .Defi-2{
+      width: 18rem;
+      padding-top: 1.5rem;
+      font-size: 1rem;
+      font-weight:900;
+    }
+
+    .body-grid .Defi-2 button{
+      margin-top: 0.5rem;
+    }
+
   }
 
   @media (max-width: 320px){
+        /* Header */
     .header .header-flex{
       padding: 1rem 2rem 1rem 2rem;
     }
@@ -158,4 +273,38 @@ body {
     /* .header button.show{
       transform: translateX(20px);
     } */
+
+    /* Body */
+    .body-grid{
+      grid-template-columns: 1fr;
+      padding: 1rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+
+    .body-grid h1{
+      width: 18rem;
+      font-size: 2rem;
+      font-weight:900;
+    }
+
+    .body-grid hr{
+      display: block;
+      width: 2rem;
+      margin-top: -0.5rem;
+      margin-bottom: -1rem;
+      background: #0059f7;
+      color: #0059f7;
+      height: 0;
+    }
+
+    .body-grid .Defi-2{
+      width: 18rem;
+      padding-top: 1px;
+      font-size: 1rem;
+      font-weight: lighter;
+    }
+
+    .body-grid .Defi-2 button{
+      margin-top: 0.5rem;
+    }
   }
