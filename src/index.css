@@ -267,6 +267,137 @@ body::-webkit-scrollbar{
   display: none;
 }
 
+/* Buildefi */
+.Buildefi-main-grid{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 3rem;
+  padding: 4rem;
+  padding-bottom: 8rem;
+}
+
+.Buildefi-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.builder-top p{
+  color: #6F7382;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 0.1rem;
+  margin-bottom: -1rem;
+}
+
+.builder-top h2{
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3rem;
+  width: 35rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed #0059f7;
+}
+
+.builder-grid h3{
+  color: #6F7382;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 0.1rem;
+}
+
+.builder-grid p{
+  color: #7E8BB5;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  padding-bottom: 2rem;
+}
+
+.icon{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.icon img{
+  padding-top: 1rem;
+}
+
+/* Bottom */
+.bottom-container{
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 5rem;
+}
+
+.bottom-grid{
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 7rem;
+  padding: 3% 6% 3% 6%;
+  border-radius: 1.5rem;
+  background-color: #0059f7;
+  line-height: 1rem;
+}
+
+.bottom-grid h3{
+  color: #CCD2E9;
+  letter-spacing: 0.1rem;
+}
+
+.bottom-grid h1{
+  font-size: 3rem;
+}
+
+.bottom-grid button{
+  margin-top: 35px;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #689EFF;
+  color: #ffffff;
+  background-color: #689EFF;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.bottom-grid button:hover{
+  cursor: pointer;
+}
+
+.bottom-grid button .icon{
+  display: inline-block;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+/* footer */
+.footer{
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 6rem;
+  background: #162044;
+  color: #ccd2E9;
+  font-weight: 900;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.footer-grid p:hover{
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-grid div:first-child{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+
+
 
 /* <---------------Media Query<------------------------ */
   @media (max-width: 960px) {
@@ -397,17 +528,66 @@ body::-webkit-scrollbar{
   display: none;
 }
 
+/* Buildefi */
+.Buildefi-main-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  padding: 2rem;
+  padding-bottom: 8rem;
 }
 
+.Buildefi-img img{
+  width: 100%;
+  height: 100%;
+}
 
+/* Bottom */
+.bottom-grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 7rem;
+  padding: 3% 6% 3% 6%;
+  line-height: 1rem;
+}
 
+.bottom-grid h3{
+  color: #CCD2E9;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+}
 
+.bottom-grid h1{
+  font-size: 2rem;
+}
 
+.bottom-grid button{
+  margin-top: 25px;
+  height: 3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 
+/* footer */
+.footer{
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 6rem;
+}
 
+.footer-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
 
+.footer-grid div:first-child{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
 
-
+}
 
 
 
@@ -559,6 +739,92 @@ body::-webkit-scrollbar{
 
 .work-block-small{
   display: none;
+}
+
+/* Buildefi */
+.Buildefi-main-grid{
+  display: block;
+  padding: 3rem;
+  padding-bottom: 4rem;
+}
+
+.Buildefi-img img{
+  padding-left: 11rem;
+  margin-top: -3rem;
+  width: 50%;
+  height: 50%;
+}
+
+.builder-top p{
+  color: #6F7382;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 0.1rem;
+  margin-bottom: -1rem;
+}
+
+.builder-top h2{
+  font-weight: 900;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  width: 35rem;
+  padding-bottom: 0.5rem;
+}
+
+.builder-grid h3{
+  font-size: 1rem;
+  line-height: 0.1rem;
+}
+
+.builder-grid p{
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+/* Bottom */
+.bottom-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 7rem;
+  padding: 3% 6% 3% 6%;
+  line-height: 1rem;
+}
+
+.bottom-grid h3{
+  color: #CCD2E9;
+  letter-spacing: 0.1rem;
+  font-size: 0.5rem;
+}
+
+.bottom-grid h1{
+  font-size: 1.2rem;
+}
+
+.bottom-grid button{
+  margin-top: 8px;
+  height: 3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* footer */
+.footer{
+  padding-left: 7rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-grid div:first-child{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 }
@@ -778,4 +1044,117 @@ body::-webkit-scrollbar{
   color: #6F7382;
 }
 
+/* Bottom */
+.bottom-container{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.bottom-grid{
+  display: block;
+  line-height: 1.7rem;
+}
+
+.bottom-grid h3{
+  color: #CCD2E9;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  line-height: 1rem;
+}
+
+.bottom-grid h1{
+  font-size: 1.5rem;
+}
+
+.bottom-grid button{
+  margin-top: 10px;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+/* footer */
+.footer{
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.footer-grid{
+  display: block;
+  line-height: 0.2rem;
+}
+
+.footer-grid div:first-child{
+  font-size: 0.8rem;
+  display: block;
+}
+.footer-grid div:last-child{
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 100;
+  padding-top: 1rem;
+}
+
+/* Buildefi */
+.Buildefi-main-grid{
+  display: block;
+  padding: 4rem;
+  padding-bottom: 3rem;
+}
+
+.Buildefi-img img{
+  padding-left: 1.5rem;
+  padding-top: 2rem;
+  width: 70%;
+  height: 70%;
+}
+
+.builder-top p{
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  line-height: 0.5rem;
+  margin-bottom: -0.4rem;
+}
+
+.builder-top h2{
+  text-align: center;
+  margin-left: -4rem;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  width: 20rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #0059f7;
+  
+}
+
+.builder-grid h3{
+  font-weight: 900;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+.builder-grid p{
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  padding-bottom: -20rem;
+}
+
+.icon{
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+
+.icon img{
+  padding-top: 4rem;
+}
 }

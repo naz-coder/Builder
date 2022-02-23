@@ -4,7 +4,10 @@ import Features from './components/Features'
 import Button from './components/Button'
 import Start from './components/Start'
 import Works from './components/Works'
-import Defi from './components/Defi'
+import Buildefi from './components/Buildefi'
+import Bottom from './components/Bottom'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
@@ -15,7 +18,9 @@ function App() {
       <Features />
       <Start />
       <Works />
-      <Defi />
+      <Buildefi />
+      <Bottom />
+      <Footer />
     </div>
   );
 }

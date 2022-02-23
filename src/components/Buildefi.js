@@ -4,9 +4,9 @@ import distributionicon from '../images/distributionicon.png'
 import innovationicon from '../images/innovationicon.png'
 
 
-const Defi = () => {
+const Buildefi = () => {
   return (
-    <div>
+    <div className='Buildefi'>
         <div className="how-work">
           <h1>What is $BLDR?</h1>
           <h4>The Builder Defi Financial System and its associated 
@@ -14,16 +14,15 @@ const Defi = () => {
               smart contract platform. These smart contracts are 
               available to any person globally.</h4>
         </div>
-        <div className='defi-main'>
-            <div className='defi-img'>
+        <div className='Buildefi-main-grid'>
+            <div className='Buildefi-img'>
                 <img src={defi}/>
             </div>
-            <div className="defi-builder">
-                <div className='defi-builder-grid'>
+            <div className="Buildefi-builder">
+                <div className='Buildefi-builder-grid'>
                     <div className='builder-top'>
                         <p>BUILDER DEFI</p>
                         <h2>A Defi economy securely providing value to all users</h2>
-                        <hr/>
                     </div>
                     <div className='builder-grid'>
                         <div className='icon'>
@@ -61,4 +60,4 @@ const Defi = () => {
   )
 }
 
-export default Defi
+export default Buildefi
