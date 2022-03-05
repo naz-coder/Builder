@@ -1,3 +1,4 @@
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Header from './components/Header'
 import Body from './components/Body'
 import Features from './components/Features'
